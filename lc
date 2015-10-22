@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+    echo "Illegal number of parameters. Expected two parameters. lowercase makes all characters in a file lowercased and writes it into a new file."
+fi
+
+if [ "$#" -eq 2 ]; then
+    lowercase < $1 > $2
+fi
+
